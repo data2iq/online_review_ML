@@ -9,5 +9,6 @@ Goals:
 
 Notebooks:
 
-JSON_EDA.ipynb : Process JSON Files
-Sentiment_model_survey.ipynb : Survey the free sentiment libraries.
+* JSON_EDA.ipynb : Process JSON Files
+
+* Sentiment_model_survey.ipynb : Survey the free sentiment libraries.
