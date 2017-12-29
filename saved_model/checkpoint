@@ -1,0 +1,2 @@
+model_checkpoint_path: "p2v_model"
+all_model_checkpoint_paths: "p2v_model"
