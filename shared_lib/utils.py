@@ -55,6 +55,14 @@ def preprocess_stop_stem(text, punct=True, stem=False, stop=True, sent=False):
 def preprocess_doc(doc):
     return preprocess_stop_stem(clean_str(doc), punct=True, stem=False, stop=True, sent=True)
 
+## preproces a list sentence
+def preprocess_doc_list(docs, sent=False):
+    new_docs = []
+    for doc in docs:
+        new_doc = preprocess_stop_stem(doc, stop=True, sent=sent, stem=False)
+        new_docs.append(new_doc)
+    return new_docs
+
 ## Text label to sentiment
 def create_senti_label_text(row):
     if row['rating'] >= 3.2:
